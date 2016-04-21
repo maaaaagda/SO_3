@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 
+
 /**
  * Created by Magdalena Polak on 18.04.2016.
  */
@@ -14,19 +15,12 @@ public class Algorithms {
     ArrayList<Page> Frame = new ArrayList<Page>();
     public int PF = 0;
 
-    public Algorithms(int FRAME_SIZE, int PagesNr, int interval)
+    public Algorithms(int FRAME_SIZE, ArrayList<Page> PageReferences)
     {
         this.FRAME_SIZE = FRAME_SIZE;
-        this.PagesNr = PagesNr;
-        for(int a = 0; a< PagesNr; a++)
-        {
-           int r =(int)(Math.random()*interval);
-            PageReferences.add(new Page(r, true, 0));
-        }
+        this.PageReferences = PageReferences;
+
     }
-
-
-
 
     public int FIFO() {
         PF = 0;
@@ -253,8 +247,7 @@ public class Algorithms {
         Frame.clear();
         return  PF;
     }
-    public Page latest(Page p, ArrayList<Page> a, ArrayList<Page> f)
-    {
+    public Page latest(Page p, ArrayList<Page> a, ArrayList<Page> f)    {
         ArrayList <Page> temp = new ArrayList<>();
         for(Page k :f)
         {
