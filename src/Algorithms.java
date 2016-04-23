@@ -42,6 +42,7 @@ public class Algorithms {
                     }
                 }
                 Frame.add(n);
+                PF++;
             }
 
             else
@@ -81,6 +82,7 @@ public class Algorithms {
                         break mainloop;
                     }
                 }
+                PF++;
                 Frame.add(n);
             }
 
@@ -122,6 +124,7 @@ public class Algorithms {
                         break mainloop;
                     }
                 }
+                PF++;
                 Frame.add(n);
             }
 
@@ -165,6 +168,7 @@ public class Algorithms {
                         break mainloop;
                     }
                 }
+                PF++;
                 Frame.add(n);
             }
 
@@ -213,6 +217,7 @@ public class Algorithms {
                         break mainloop;
                     }
                 }
+                PF++;
                 Frame.add(n);
             }
 
@@ -226,6 +231,7 @@ public class Algorithms {
                         break mainloop;
                     }
                 }
+               Collections.sort(Frame, Page.refComparator);
                boolean found = false;
                parityLoop:
                do {

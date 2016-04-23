@@ -18,7 +18,7 @@ public class Result {
         {
             Algorithms a = new Algorithms((int)f.get(j),PageReferences);
             System.out.println("\nResults with frame size: " + (int)f.get(j));
-            System.out.println("FIFO: " + a.FIFO() + " RANDOM: " + a.RANDOM()+ " LRU: " + a.LRU()+ " OPT: " + a.OPT()+ " OPT_APX: " + a.LRU_APX());
+            System.out.println("FIFO: " + a.FIFO() + " RANDOM: " + a.RANDOM()+ " LRU: " + a.LRU()+ " OPT: " + a.OPT()+ " LRU_APX: " + a.LRU_APX());
 
 
         }
