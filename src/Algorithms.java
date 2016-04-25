@@ -214,6 +214,7 @@ public class Algorithms {
                     if (p.nr == n.nr)
                     {
                         p.setParityBit(true);
+                        p.setRef(p.ref+1);
                         break mainloop;
                     }
                 }
@@ -228,6 +229,7 @@ public class Algorithms {
                     if (p.nr == n.nr)
                     {
                         p.setParityBit(true);
+                        p.setRef(p.ref+1);
                         break mainloop;
                     }
                 }

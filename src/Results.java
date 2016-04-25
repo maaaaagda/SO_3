@@ -10,7 +10,7 @@ public class Results
     {
         ArrayList frames = new ArrayList<>();
         Scanner reader = new Scanner(System.in);
-        System.out.println("How many pages do you want? ");
+        System.out.println("How many page references do you want? ");
         int k = reader.nextInt();
         System.out.println("And from what interval? ");
         int d = reader.nextInt();
